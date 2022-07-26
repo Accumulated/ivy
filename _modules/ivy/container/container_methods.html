@@ -8744,7 +8744,7 @@
 <span class="sd">    &gt;&gt;&gt; dcdw = ivy.Container(a=ivy.array([0.5, 0.2, 0.1]),\</span>
 <span class="sd">                             b=ivy.array([2., 3.42, 1.69]))</span>
 <span class="sd">    &gt;&gt;&gt; lr = ivy.array(0.3)</span>
-<span class="sd">    &gt;&gt;&gt; ivy.Container.static_gradient_descent_update(w, dcdw, lr)</span>
+<span class="sd">    &gt;&gt;&gt; ivy.Container.static_gradient_descent_update(w, dcdw, lr, inplace=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(w)</span>
 <span class="sd">        ({</span>
 <span class="sd">            a: ivy.array([0.85, 1.94, 2.97]),</span>
@@ -8830,7 +8830,7 @@
 <span class="sd">    &gt;&gt;&gt; dcdw = ivy.Container(a=ivy.array([0.5, 0.2, 0.1]),\</span>
 <span class="sd">                             b=ivy.array([2., 3.42, 1.69]))</span>
 <span class="sd">    &gt;&gt;&gt; lr = ivy.array(0.3)</span>
-<span class="sd">    &gt;&gt;&gt; w.gradient_descent_update(dcdw, lr)</span>
+<span class="sd">    &gt;&gt;&gt; w.gradient_descent_update(dcdw, lr, inplace=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(w)</span>
 <span class="sd">        ({</span>
 <span class="sd">            a: ivy.array([0.85, 1.94, 2.97]),</span>
@@ -8843,7 +8843,7 @@
 <span class="sd">                             b=ivy.array([2., 3.42, 1.69]))</span>
 <span class="sd">    &gt;&gt;&gt; lr = ivy.Container(a=ivy.array(0.3),\</span>
 <span class="sd">                            b=ivy.array(0.1))</span>
-<span class="sd">    &gt;&gt;&gt; w.gradient_descent_update(dcdw, lr)</span>
+<span class="sd">    &gt;&gt;&gt; w.gradient_descent_update(dcdw, lr, inplace=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(w)</span>
 <span class="sd">        ({</span>
 <span class="sd">            a: ivy.array([0.85, 1.94, 2.97]),</span>
